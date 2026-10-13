@@ -1,0 +1,33 @@
+{
+  "name": "file-counter",
+  "displayName": "File Counter",
+  "description": "Scans the current workspace and displays the number of files along with each file's name and extension.",
+  "version": "0.0.1",
+  "publisher": "subash68",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fileCounter.showFileCount",
+        "title": "File Counter: Show File Count"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.4.0"
+  }
+}
